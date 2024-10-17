@@ -12,7 +12,7 @@ run pip install requests selenium pytest
 
 Run tests locally in CMD: 
 ```
-pytest main.py
+pytest src/main.py
 ```
 
 Demo:
