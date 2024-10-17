@@ -19,12 +19,12 @@ def driver():
     
     # setup Chrome WebDriver
     service = Service('/usr/bin/chromedriver')
-    drivers = webdriver.Chrome(service=service, options=chrome_options)
+    driver = webdriver.Chrome(service=service, options=chrome_options)
 
-    yield drivers
+    yield driver
     
     # quit the driver after the test
-    drivers.quit()
+    driver.quit()
 
 def test_twitch_mobile_search(driver):
 
